@@ -1,36 +1,19 @@
-# Asset Allocation: From Markowitz to Deep Reinforcement Learning
-
-
-[**Thesis**](http://hdl.handle.net/10609/146811) | [**Paper**](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4148379)
-
-PyTorch implementation of **Asset Allocation: From Markowitz to Deep Reinforcement Learning**.
-
-<p align="left"><img width="50%" src="images/main.PNG" /></p>
+# Portfolio Management comparision between traditional and Deep Reinforcement Learning methods.
 
 ## Overview
 
-Asset allocation is an investment strategy that aims to balance risk and reward by constantly redistributing the portfolio's assets according to certain goals, risk tolerance, and investment horizon. Unfortunately, there is no simple formula that can find the right allocation for every individual. As a result, investors may use different asset allocations' strategy to try to fulfill their financial objectives. In this work, we conduct an extensive benchmark study to determine the efficacy and reliability of a number of optimization techniques. In particular, we focus on traditional approaches based on Modern Portfolio Theory, and on machine-learning approaches based on deep reinforcement learning. We assess the model's performance under different market tendency, i.e., both bullish and bearish markets.
+The objective of this project is to determine the effectiveness and robustness of different portfolio optimization techniques. The project addresses the challenge of finding the optimal asset allocation strategy tailored to individual investors' financial objectives and risk profiles. The study compares traditional approaches, rooted in Modern Portfolio Theory, with machine-learning-based approaches using deep reinforcement learning. By evaluating these techniques under different market tendencies, the project aims to provide insights into their performance and reliability.
 
-<p align="left"><img width="100%" src="images/results.PNG" /></p>
+## Methodology
 
-## Code
-The repository contains two files:
- <ul>
-  <li> DeepRL.py -> The reincorcement environment for asset allocation and its fucntions</li>
-  <li> main.ipnyb -> The Jupyter notebook</li>
-</ul> 
+Traditional Approaches: Modern Portfolio Theory (MPT) provides a framework for asset allocation optimization. Traditional approaches based on MPT, such as mean-variance optimization, are implemented to construct efficient portfolios. These techniques optimize the portfolio weights based on expected returns, risks, and correlations.
 
-To use the code, we only need to run the `main.ipnyb` notebook. Note that you might need to installl thrid party libraries such as [stable_baselines3](https://stable-baselines3.readthedocs.io/en/master/), [pandas_datareader](https://pandas-datareader.readthedocs.io/en/latest/) and [pyfolio](https://github.com/quantopian/pyfolio).
+Machine Learning Approaches: Deep reinforcement learning (DRL) techniques are employed to optimize asset allocation. Reinforcement learning algorithms, such as deep Q-networks (DQN), are trained to learn optimal asset allocation policies. The models utilize historical data and reward signals to dynamically adjust the portfolio weights.
 
-## Acknowledgement
-We acknowledge the official code [FinRL](https://github.com/AI4Finance-Foundation/FinRL) & [Stock-Trading-Environment](https://github.com/notadamking/Stock-Trading-Environment)
+Performance Evaluation: The performance of the asset allocation models is evaluated under different market tendencies, including both bullish and bearish markets. Evaluation metrics such as risk-adjusted returns, Sharpe ratio, and maximum drawdown are used to assess the models' efficacy and reliability.
 
-## Citation
-```
-@article{durall2022asset,
-  title={Asset Allocation: From Markowitz to Deep Reinforcement Learning},
-  author={Durall, Ricard},
-  journal={Available at SSRN 4148379},
-  year={2022}
-}
-```
+Benchmark Study: A comprehensive benchmark study is conducted to compare the performance of traditional approaches (MPT-based) and machine learning approaches (DRL-based). The study provides insights into the strengths and limitations of each technique in various market conditions.
+
+## Conclusion
+
+The benchmark study highlighted the importance of considering different portfolio optimization techniques and tailoring them to individual investors' financial objectives and risk profiles. Traditional approaches provided a systematic framework, while machine learning approaches introduced adaptability and the potential to capture complex patterns. The findings of this project can assist investors in selecting the most appropriate asset allocation strategy based on their specific goals, risk tolerance, and investment horizon.
